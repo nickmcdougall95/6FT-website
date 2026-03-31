@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact | 6FT Interviews</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+
+        <!-- HEADER -->
+         <header class="site-header">
+            <div class="logo">6FT Interviews</div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="shop.html">Store</a></li>
+                    <li><a href="#">Promotions</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button id="menu-btn">☰</button>
+         </header>
+
+         <!-- CONTACT FORM -->
+          <section class="contact">
+            <h1>📩 Contact & Booking</h1>
+            <p>Artists, managers, brands & sponsors - reach out below.</p>
+
+            <!-- REPLACE action URL WITH YOUR FORMSPREE LINK -->
+             <form action="https://formspree.io/f/xkgzpyob" method="POST">
+
+                <input type="text" name="name" placeholder="Your Name" required>
+
+                <input type="email" name="email" placeholder="Your Email" required>
+
+                <select name="inquiry_type" required>
+                    <option value="">Select Inquiry Type</option>
+                    <option>Artist Interview</option>
+                    <option>Music Promotion</option>
+                    <option>Brand/ Sponsorship</option>
+                    <option>Podcast Guest</option>
+                    <option>Other</option>
+                </select>
+
+                <textarea name="message" placeholder="Tell us what you need..." required></textarea>
+
+                <button type="submit" class="buy-btn">Send Message</button>
+             </form> 
+          </section>
+
+          <!-- FOOTER -->
+           <footer>
+            <p>© 2025 6FT Interviews. All rights reserved.</p>
+           </footer>
+
+           <script src="script.js"></script>
+    </body>
+</html>

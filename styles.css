@@ -1,0 +1,309 @@
+/* General Page Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    background: #0a0a0a;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    line-height: 1.6;
+}
+
+button {
+    background-color: #ff3b30;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    padding: 20px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 16px 24px;
+    position: sticky;
+    top: 0;
+}
+
+.brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff3b30;
+}
+
+.site-nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.site-nav a:hover {
+    color: #ff3b30;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ff4444;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff4444;
+}
+
+#menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.8em;
+}
+
+
+
+/* Hero Section */
+.hero {
+    padding: 80px 20px;
+    text-align: center;
+    background: linear-gradient(180deg, #111, #222);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    padding: 10px 25px;
+    background: #ff4444;
+    border: none;
+    color: white;
+    font-size: 1em;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.cta-btn:hover {
+    background: #ff6666;
+}
+
+/* Features Section */
+.features {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.features h2 {
+    color: #ff4444;
+    margin-bottom: 30px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: #1a1a1a;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+}
+
+.card h3 {
+    margin: 15px 0;
+}
+
+.card p {
+    padding: 0 10px 20px;
+    color: #bbb;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+    color: #999;
+}
+
+
+
+
+
+/* Responsive Menu */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: #111;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 200px;
+        text-align: right;
+        padding: 10px;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    #menu-btn {
+        display: block;
+    }
+}
+
+/* SHOP PAGE */
+.shop {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.shop h1 {
+    color: #ff4444;
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+.shop p {
+    color: #ccc;
+    margin-bottom: 40px;
+    font-size: 1.1.em;
+
+}
+
+.buy-btn {
+    background: #ff4444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s;
+}
+
+.buy-btn:hover {
+    background: #ff6666;
+}
+
+.active {
+    color: #ff4444;
+}
+
+
+/* CONTACT PAGE */
+.contact {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact h1 {
+    color: #ff4444;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+
+.contact input,
+.contact select,
+.contact textarea {
+    padding: 12 px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1em;
+}
+
+.contact textarea {
+    min-height: 120px;
+}
+
+/* BLOG PAGE */
+.blog {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.blog h1 {
+    color: #ff4444;
+    margin-bottom: 40px;
+}
+
+.blog .card {
+    text-align: left;
+}
+
+.blog .card h3 {
+    padding: 10px;
+}
+
+.blog .card p {
+    padding: 0 10px 15px;
+}
